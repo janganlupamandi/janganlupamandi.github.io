@@ -14,7 +14,6 @@
               .head{
                 width: 100%;
                 height: 100%;
-                background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80")
               } 
               .container-caption{
                 color: cornflowerblue;
@@ -74,6 +73,57 @@
               #about .about-text:last-child {
                 margin-bottom: 0;
               }
+
+              /* Services Section
+--------------------------------*/
+#services {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+}
+
+#services .service-item {
+  margin-bottom: 20px;
+}
+
+#services .service-icon {
+  float: left;
+  background: #03C4EB;
+  padding: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid #03C4EB;
+}
+
+#services .service-icon i {
+  color: #fff;
+  font-size: 24px;
+}
+
+#services .service-item:hover .service-icon {
+  background: #fff;
+}
+
+#services .service-item:hover .service-icon i {
+  color: #03C4EB;
+}
+
+#services .service-title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#services .service-title a {
+  color: #111;
+}
+
+#services .service-description {
+  margin-left: 80px;
+  line-height: 24px;
+}
+
 
                           /* Contact Section
             --------------------------------*/
@@ -172,6 +222,9 @@
                                       <li class="nav-item">
                                         <a class="nav-link" href="#">Menu</a>
                                       </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Menu</a>
+                                      </li>
                                     </ul>
                         </div>
                         </ul>
@@ -206,59 +259,80 @@
 
           <div class="space"></div>
 
-<br>
-<br>
- <!--==========================
+
+<!--==========================
   Services Section
   ============================-->
   <section id="services">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Our Services</h3>
-          <hr>
-          <div class="section-title-divider"></div>
-          <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Our Services</h3>
+            <hr>
+            <div class="section-title-divider"></div>
+            <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-4 service-item">
+            <div class="service-icon"><i class="fa fa-desktop"></i></div>
+            <h4 class="service-title"><a href="">JUAL BATU BATA</a></h4>
+            <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-md-4 service-item">
+            <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+            <h4 class="service-title"><a href="">JUAL KASET PS</a></h4>
+            <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-md-4 service-item">
+            <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
+            <h4 class="service-title"><a href="">JUALAN BAJU</a></h4>
+            <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-md-4 service-item">
+            <div class="service-icon"><i class="fa fa-photo"></i></div>
+            <h4 class="service-title"><a href="">JUALAN KAOS</a></h4>
+            <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-md-4 service-item">
+            <div class="service-icon"><i class="fa fa-road"></i></div>
+            <h4 class="service-title"><a href="">KALUNG SWAG</a></h4>
+            <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-md-4 service-item">
+            <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
+            <h4 class="service-title"><a href="">SPATU SPORT</a></h4>
+            <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="">JUAL BATU BATA</a></h4>
-          <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-        </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="service-title"><a href="">JUAL KASET PS</a></h4>
-          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-        </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
-          <h4 class="service-title"><a href="">JUALAN BAJU</a></h4>
-          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-        </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-photo"></i></div>
-          <h4 class="service-title"><a href="">JUALAN KAOS</a></h4>
-          <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-road"></i></div>
-          <h4 class="service-title"><a href="">KALUNG SWAG</a></h4>
-          <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-        </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
-          <h4 class="service-title"><a href="">SPATU SPORT</a></h4>
-          <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
    <!--==========================
   Contact Section
   ============================-->
